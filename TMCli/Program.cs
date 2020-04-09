@@ -91,7 +91,7 @@ namespace TMCli
                 new Option<bool>("--version")
             };
 
-            rootCommand.Description = "TestMyCode CLI interface.";
+            rootCommand.Description = "TestMyCode CLI";
 
             return await rootCommand.InvokeAsync(args);
         }
