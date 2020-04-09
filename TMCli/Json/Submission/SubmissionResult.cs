@@ -30,7 +30,5 @@ namespace TMCli.Json.Submission
         public bool Reviewed { get; set; }
         public bool RequestsReview { get; set; }
         public DateTime SubmittedAt { get; set; }
-
-        //validationResult
     }
 }
