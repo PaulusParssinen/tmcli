@@ -6,10 +6,10 @@ namespace TMCli.Json
     public class ExerciseWithPoints
     {
         public int Id { get; set; }
-        public IEnumerable<AvailablePoint> AvailablePoints { get; set; }
-        public IEnumerable<string> AwardedPoints { get; set; }
-        public string Name { get; set; }
-        
+        public IEnumerable<AvailablePoint> AvailablePoints { get; set; } = default!;
+        public IEnumerable<string> AwardedPoints { get; set; } = default!;
+        public string Name { get; set; } = default!;
+
         public DateTime? PublishTime { get; set; }
         public DateTime? SolutionvisibleAfter { get; set; }
 

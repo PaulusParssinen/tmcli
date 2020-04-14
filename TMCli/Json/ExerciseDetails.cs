@@ -6,7 +6,7 @@ namespace TMCli.Json
     public class ExerciseDetails
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Name { get; set; } = default!;
         public bool Locked { get; set; }
 
         public string? DeadlineDescription { get; set; }
@@ -14,11 +14,11 @@ namespace TMCli.Json
         public string? SoftDeadlineDescription { get; set; }
         public DateTime? SoftDeadline { get; set; }
 
-        public string Checksum { get; set; }
+        public string Checksum { get; set; } = default!;
 
-        public string ReturnUrl { get; set; }
-        public string ZipUrl { get; set; }
-        
+        public string ReturnUrl { get; set; } = default!;
+        public string ZipUrl { get; set; } = default!;
+
         public bool Returnable { get; set; }
         public bool RequiresReview { get; set; }
         public bool Attempted { get; set; }
@@ -26,14 +26,14 @@ namespace TMCli.Json
         public bool Reviewed { get; set; }
         public bool? AllReviewPointsGiven { get; set; }
 
-        public string MemoryLimit { get; set; }
-        public IList<string> RuntimeParams { get; set; }
+        public string MemoryLimit { get; set; } = default!;
+        public IList<string> RuntimeParams { get; set; } = default!;
         public ValgrindStrategy ValgrindStrategy { get; set; } 
         
         public bool CodeReviewRequestsEnabled { get; set; }
         public bool RunTestsLocallyActionEnabled { get; set; }
         
-        public string ExerciseSubmissionUrl { get; set; }
+        public string ExerciseSubmissionUrl { get; set; } = default!;
 
         public string? LatestSubmissionUrl { get; set; }
         public int? LatestSubmissionId { get; set; }

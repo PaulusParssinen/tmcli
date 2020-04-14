@@ -6,7 +6,7 @@ namespace TMCli.Commands
     {
         protected CliContext Context { get; }
 
-        protected TMCCommand(CliContext context, string name, string description = null)
+        protected TMCCommand(CliContext context, string name, string? description = default)
             : base(name, description)
         {
             Context = context;
