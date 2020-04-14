@@ -10,20 +10,21 @@ namespace TMCli
     {
         static async Task<int> Main(string[] args)
         {
-            var context = new CliContext();
+            Console.Title = nameof(TMCli);
 
-            Console.Title = "TMCli";
+            var context = await CliContext.FromCacheAsync();
 
             var rootCommand = new RootCommand
             {
+                new OrganizationCommand(context),
                 new CoursesCommand(context),
                 new ExercisesCommand(context),
+
                 new DownloadCommand(context),
                 new SubmitCommand(context),
 
                 new LoginCommand(context),
                 new LogoutCommand(context),
-                new OrganizationCommand(context),
             };
 
             rootCommand.Description = "TestMyCode CLI";
