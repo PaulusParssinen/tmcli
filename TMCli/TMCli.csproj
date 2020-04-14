@@ -10,7 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OAuth2ClientHandler" Version="2.0.0.28" />
     <PackageReference Include="System.CommandLine" Version="2.0.0-beta1.20158.1" />
   </ItemGroup>
 
